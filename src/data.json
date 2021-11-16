@@ -1,0 +1,32 @@
+{
+  "countries": [
+    {
+      "displayName": "Spain",
+      "slug": "spain",
+      "fields": [
+        {
+          "name": "maritalStatus",
+          "displayName": "Marital Status"
+        },
+        {
+          "name": "sin",
+          "displayName": "Social Insurance Number"
+        }
+      ]
+    },
+    {
+      "displayName": "Ghana",
+      "slug": "ghana",
+      "fields": [
+        {
+          "name": "maritalStatus",
+          "displayName": "Marital Status"
+        },
+        {
+          "name": "sin",
+          "displayName": "Social Insurance Number"
+        }
+      ]
+    }
+  ]
+}
