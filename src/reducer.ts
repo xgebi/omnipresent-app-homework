@@ -53,7 +53,6 @@ function reducer(state: IFormData, action: IAction): IFormData {
 }
 
 function changeCountry(state: IFormData, action: IAction): IFormData {
-  console.log(state.firstName.length > 0 && state.lastName.length > 0 && (action.value as string).length > 0)
   return {
     ...state,
     country: action.value as string,
