@@ -7,11 +7,13 @@ function reducer(state: IFormData, action: IAction): IFormData {
       return {
         ...state,
         firstName: action.value as string,
+        isSubmittable: (action.value as string).length > 0 && state.lastName.length > 0 && state.country.length > 0
       }
     case "LAST_NAME":
       return {
         ...state,
         lastName: action.value as string,
+        isSubmittable: state.firstName.length > 0 && (action.value as string).length > 0 && state.country.length > 0
       }
     case "COUNTRY":
       return changeCountry(state, action);
@@ -51,9 +53,11 @@ function reducer(state: IFormData, action: IAction): IFormData {
 }
 
 function changeCountry(state: IFormData, action: IAction): IFormData {
+  console.log(state.firstName.length > 0 && state.lastName.length > 0 && (action.value as string).length > 0)
   return {
     ...state,
     country: action.value as string,
+    isSubmittable: state.firstName.length > 0 && state.lastName.length > 0 && (action.value as string).length > 0,
     socialInsuranceNumber: "",
     holidayAllowance: 0,
     maritalStatus: "",

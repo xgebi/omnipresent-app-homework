@@ -15,6 +15,7 @@ const initialAppState: IFormData = {
   maritalStatus: "",
   numberOfChildren: 0,
   workingHours: 0,
+  isSubmittable: false,
 };
 const initialCountry: ICountry = {
     displayName: "",
@@ -101,6 +102,7 @@ function App() {
               value={appState.numberOfChildren}
               onChange={(e) => dispatch({type: "CHILDREN", value: e.target.value})}
               min={0}
+              defaultValue={0}
           />
       </section>}
       {country?.fields.find(field => field.name === "workingHours") && <section>
@@ -112,7 +114,7 @@ function App() {
           />
       </section>}
 
-      <button onClick={() => console.log(appState)}>Submit</button>
+      <button disabled={!appState.isSubmittable} onClick={() => console.log(appState)}>Submit</button>
     </div>
   );
 }

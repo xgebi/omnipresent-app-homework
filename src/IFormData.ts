@@ -9,7 +9,8 @@ interface IFormData {
   holidayAllowance: number,
   maritalStatus: string,
   numberOfChildren: number,
-  workingHours: number
+  workingHours: number,
+  isSubmittable: boolean
 }
 
 export default IFormData;
