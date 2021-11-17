@@ -6,7 +6,7 @@ interface IFormData {
   dob: Date | null,
   country: string,
   socialInsuranceNumber: string,
-  vacationAllowance: number,
+  holidayAllowance: number,
   maritalStatus: string,
   numberOfChildren: number,
   workingHours: number

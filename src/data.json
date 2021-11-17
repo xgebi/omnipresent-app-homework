@@ -3,28 +3,39 @@
     {
       "displayName": "Spain",
       "slug": "spain",
+      "holidayAllowance": 30,
+      "holidayAllowanceType": "min",
       "fields": [
         {
-          "name": "maritalStatus",
-          "displayName": "Marital Status"
+          "name": "maritalStatus"
         },
         {
-          "name": "sin",
-          "displayName": "Social Insurance Number"
+          "name": "sin"
         }
       ]
     },
     {
       "displayName": "Ghana",
       "slug": "ghana",
+      "holidayAllowance": 0,
+      "holidayAllowanceType": "none",
       "fields": [
         {
-          "name": "maritalStatus",
-          "displayName": "Marital Status"
+          "name": "maritalStatus"
         },
         {
-          "name": "sin",
-          "displayName": "Social Insurance Number"
+          "name": "sin"
+        }
+      ]
+    },
+    {
+      "displayName": "Brazil",
+      "slug": "brazil",
+      "holidayAllowance": 40,
+      "holidayAllowanceType": "max",
+      "fields": [
+        {
+          "name": "workingHours"
         }
       ]
     }
